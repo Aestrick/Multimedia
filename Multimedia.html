@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy Multimedia Experience</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>GALAXY MULTIMEDIA EXPERIENCE</h1>
+            <p>Explore the universe of digital media</p>
+        </header>
+        
+        <section>
+            <h2>Cosmic Video Journey</h2>
+            <div class="media-card">
+                <p>Watch this mesmerizing nebula formation in 4K</p>
+                <video id="spaceVideo" width="800" height="450" poster="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" controls>
+                    <source src="assets/231596.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="controls">
+                    <button onclick="playVideo()">Play Video</button>
+                    <button onclick="pauseVideo()">Pause Video</button>
+                    <button onclick="showVideoInfo()">Video Info</button>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Interstellar Soundscape</h2>
+            <div class="media-card">
+                <p>Listen to the sounds of the cosmos</p>
+                <audio id="spaceAudio" controls>
+                    <source src="/assets/spacesound-7547.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="controls">
+                    <button onclick="playAudio()">Play Audio</button>
+                    <button onclick="pauseAudio()">Pause Audio</button>
+                    <button onclick="showAudioInfo()">Audio Info</button>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Galactic Image Gallery</h2>
+            <div class="image-gallery">
+                <div class="image-container" id="image1">
+                    <img src="https://images.unsplash.com/photo-1454789548928-9efd52dc4031?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Spiral galaxy with bright core">
+                    <div class="image-caption">Andromeda Galaxy</div>
+                </div>
+                <div class="image-container" id="image2">
+                    <img src="https://images.unsplash.com/photo-1464802686167-b939a6910659?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Colorful nebula in deep space">
+                    <div class="image-caption">Orion Nebula</div>
+                </div>
+                <div class="image-container" id="image3">
+                    <img src="https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Earth from space with city lights visible">
+                    <div class="image-caption">Earth at Night</div>
+                </div>
+                <div class="image-container" id="image4">
+                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Solar flare erupting from the sun">
+                    <div class="image-caption">Solar Flare</div>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <p>Created with ♥ for Web Design Development | Information Technology UMY</p>
+            <p>© 2023 Galaxy Multimedia Experience</p>
+        </footer>
+    </div>
+
+    <script src="style.js"></script>
+</body>
+</html>
